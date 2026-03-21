@@ -214,8 +214,8 @@ nav a:hover::after {
 
 /* ============ FEATURED SERVICES ============ */
 .featured-services {
-    padding: 5rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #f0f4ff 100%);
+    padding: 3rem 2rem;
+    background: #f8fbff;
 }
 
 .featured-services-container {
@@ -223,87 +223,43 @@ nav a:hover::after {
     margin: 0 auto;
 }
 
-.featured-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: #0052cc;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.featured-subtitle {
-    text-align: center;
-    color: #666;
-    font-size: 1.1rem;
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.featured-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-}
-
-.service-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 82, 204, 0.15);
-}
-
-.service-card-image {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+.featured-rows {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: #0052cc;
-    overflow: hidden;
+    flex-direction: column;
 }
 
-.service-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.featured-row {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding: 3rem 0;
+    border-top: 1px solid #d0e4ff;
+    align-items: flex-start;
 }
 
-.service-card-content {
-    padding: 2rem;
+.featured-row:last-child {
+    border-bottom: 1px solid #d0e4ff;
 }
 
-.service-card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #0052cc;
-    margin-bottom: 0.5rem;
-}
-
-.service-card-subtitle {
-    font-size: 0.9rem;
-    color: #0052cc;
+.row-title {
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: #3b5bdb;
+    margin: 0;
 }
 
-.service-card-description {
-    color: #666;
-    font-size: 0.95rem;
+.row-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4c6ef5;
+    margin-bottom: 0.8rem;
+}
+
+.row-description {
+    font-size: 1rem;
+    color: #2c3e50;
     line-height: 1.6;
+    max-width: 500px;
+    color: #4a6fa5;
 }
 
 /* ============ CONTACT SECTION ============ */
@@ -456,9 +412,14 @@ footer {
         gap: 2rem;
     }
 
-    .featured-grid {
+    .featured-row {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .row-title {
+        font-size: 1.6rem;
     }
 
     .contact-info {
