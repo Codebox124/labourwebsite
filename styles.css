@@ -98,7 +98,7 @@ nav a:hover::after {
 
 /* ============ HERO SECTION ============ */
 .hero {
-    padding: 5rem 0px;
+    padding: 5rem 0px 0px 0px ;
     background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
     overflow: hidden;
 }
