@@ -18,7 +18,7 @@
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
-                <a href="#contact" class="cta-button">Get Started</a>
+                <a href="#contact" class="cta-button">Contact</a>
             </nav>
         </div>
     </header>
@@ -27,10 +27,10 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Your Vision, <br> Our Labor</h1>
+                <h1>YOUR VISION, OUR LABOR</h1>
                 <p>We are laborers committed to completing your home tweaks & tasks with professionalism and expertise.</p>
                 <p class="description">We provide custom home improvement, cleanup & remodeling services tailored to your needs.</p>
-                <a href="#contact" class="cta-button">Contact Us Today</a>
+                <a href="#contact" class="cta-button">Contact</a>
             </div>
             <div class="hero-image">
                 <img src="hero.png" alt="Modern home interior with wooden floors">
@@ -136,11 +136,57 @@
         </div>
     </section>
 
-    <!-- ============ CONTACT SECTION ============ -->
+    <!-- ============ SERVICE AREAS ============ -->
+    <section class="service-areas-section">
+        <div class="service-areas-container">
+            <h2 class="service-areas-title">SERVICE AREAS</h2>
+            <div class="service-areas-list">
+                <div class="service-area-item">Southern California & Dallas/Fort Worth/NYC Tristate area</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT FORM SECTION ============ -->
     <section class="contact-section" id="contact">
         <div class="contact-container">
-            <h2 class="contact-title">Ready to Get Started?</h2>
-            <p class="contact-description">Contact us today to discuss your home improvement project and receive a free consultation.</p>
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-description">Fill out the form below and we'll be in touch shortly.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget *</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Select a budget range</option>
+                        <option value="under-1000">Under $1,000</option>
+                        <option value="1000-5000">$1,000 - $5,000</option>
+                        <option value="5000-10000">$5,000 - $10,000</option>
+                        <option value="10000-25000">$10,000 - $25,000</option>
+                        <option value="25000-plus">$25,000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
 
             <div class="contact-info">
                 <div class="contact-item">
@@ -148,8 +194,8 @@
                     <div class="contact-item-value"><a href="tel:+19494848619">(949) 484-8619</a></div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-item-label">Service Areas</div>
-                    <div class="contact-item-value">Southern California & Dallas/Fort Worth/NYC Tristate area</div>
+                    <div class="contact-item-label">Email</div>
+                    <div class="contact-item-value"><a href="mailto:Laborerusа@gmail.com">Laborerusа@gmail.com</a></div>
                 </div>
             </div>
         </div>
