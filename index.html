@@ -14,14 +14,26 @@
     <header>
         <div class="header-container">
             <img src="/image.png" alt="">
-            <nav>
+            <nav id="nav-menu">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
                 <a href="#contact" class="cta-button">Contact</a>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
+
+    <!-- ============ MOBILE NAVIGATION ============ -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="cta-button">Contact</a>
+    </div>
 
     <!-- ============ HERO SECTION ============ -->
     <section class="hero" id="home">
@@ -215,5 +227,35 @@
             <p class="footer-credit">&copy; 2026 LABORER USA. All rights reserved. | <a href="https://makeitandmarket.com" target="_blank" style="color: #0052cc;">Made by Make It & Market</a></p>
         </div>
     </footer>
+
+    <!-- ============ JAVASCRIPT FOR MOBILE NAV ============ -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navOverlay = document.getElementById('nav-overlay');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        });
+
+        navOverlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navOverlay.classList.remove('active');
+            mobileNav.classList.remove('active');
+        });
+
+        // Close mobile nav when clicking on a link
+        const mobileNavLinks = mobileNav.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navOverlay.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
