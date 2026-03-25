@@ -560,6 +560,58 @@ nav a:hover::after {
     transform: translateY(0);
 }
 
+/* Success Message */
+.form-message-success {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: slideInDown 0.5s ease-out;
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.2);
+}
+
+.form-message-success h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-message-success p {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.success-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .contact-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -655,6 +707,16 @@ footer {
 @media (max-width: 768px) {
     .header-container {
         padding: 0 1rem;
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide desktop navigation on mobile */
+    nav#nav-menu {
+        display: none;
     }
 
     .collage-container {
