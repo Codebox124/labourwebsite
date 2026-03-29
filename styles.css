@@ -232,6 +232,7 @@ nav a:hover::after {
     color: #555;
     margin-bottom: 1rem;
     line-height: 1.8;
+    padding: 0 10px;
 }
 
 .hero-content .description {
@@ -256,12 +257,12 @@ nav a:hover::after {
 
 /* ============ COLLAGE SECTION ============ */
 .collage-section {
-    padding: 2rem;
+  padding-top: 10px;
     background: #ffffff;
 }
 
 .collage-container {
-    max-width: 1400px;
+   
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -302,8 +303,9 @@ nav a:hover::after {
 }
 
 .services-columns-group {
-    display: flex;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
     flex: 1;
 }
 
@@ -374,8 +376,9 @@ nav a:hover::after {
 }
 
 .services-list-two-col {
-    column-count: 2;
-    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
 
 /* ============ SERVICES BY LOCATION ============ */
@@ -801,8 +804,12 @@ footer {
     }
 
     .services-columns-group {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .services-list-two-col {
+        column-count: 2;
     }
 
     .services-image {
