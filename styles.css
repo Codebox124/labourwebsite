@@ -308,13 +308,15 @@ nav a:hover::after {
 }
 
 .services-image {
-    flex: 1;
-    max-width: 500px;
+    flex: 0 0 auto;
+    max-width: 220px;
 }
 
 .service-preview-img {
     width: 100%;
     height: auto;
+    max-height: 260px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -369,6 +371,67 @@ nav a:hover::after {
     color: #4a6fa5;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.services-list-two-col {
+    column-count: 2;
+    column-gap: 1.5rem;
+}
+
+/* ============ SERVICES BY LOCATION ============ */
+.location-services-section {
+    padding: 6rem 2rem;
+    background: #ffffff;
+}
+
+.location-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.location-card {
+    border: 1px solid #d0e4ff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    background: #f8fbff;
+}
+
+.location-card-header {
+    margin-bottom: 1.5rem;
+}
+
+.location-tag {
+    display: inline-block;
+    background: #0052cc;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.location-service-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4a6fa5;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============ FEATURED SERVICES ============ */
