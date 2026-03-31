@@ -385,11 +385,10 @@ nav a:hover::after {
 }
 
 .services-list-two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 4rem;
+    align-items: flex-start;
 }
 
 /* ============ SERVICES BY LOCATION ============ */
