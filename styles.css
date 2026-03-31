@@ -386,9 +386,9 @@ nav a:hover::after {
 
 .services-list-two-col {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
-    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 /* ============ SERVICES BY LOCATION ============ */
